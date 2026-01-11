@@ -6,7 +6,7 @@ export interface Project {
   links: ProjectLink[];
   technologies: string[];
   date: string;
-  category: 'game' | 'web';
+  category: 'game' | 'web' | 'other';
 }
 
 export interface ProjectLink {

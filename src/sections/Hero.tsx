@@ -3,7 +3,7 @@ import { TypewriterText } from '../components/TypewriterText';
 
 export const Hero = () => {
   return (
-    <section className="section-spacing pt-24 sm:pt-32">
+    <section className="pt-12 pb-12 sm:pt-12">
       <div className="content-wrapper">
         <div className="flex flex-col sm:flex-row items-start gap-8 mb-8">
           {/* Avatar with animated glow */}
@@ -18,7 +18,7 @@ export const Hero = () => {
 
           {/* Text Content */}
           <div className="flex-1 text-left">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 hero-title">
+            <h1 className="text-4xl sm:text-5xl font-bold mb-2 hero-title">
               <span className="gradient-text">Hi, I'm Latif</span>
             </h1>
 
