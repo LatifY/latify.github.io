@@ -2,6 +2,23 @@ import { Project } from '../types';
 
 export const gameProjects: Project[] = [
   {
+    id: 'billiardgame',
+    title: 'Billiard Game',
+    description: 'This game provides a unique billiards experience but with that chaotic buckshot roulette vibe — high risk, high reward style. Check out Instagram for more gameplay clips and updates!',
+    images: [
+      '/assets/billiardgame/ss4.png',
+      '/assets/billiardgame/ss9.png',
+      '/assets/billiardgame/ss10.png',
+      '/assets/billiardgame/insta.png',
+    ],
+    links: [
+      { type: 'instagram', url: 'https://www.instagram.com/lative.dev/' },
+    ],
+    technologies: ['Unity', 'C#', 'HLSL', 'DoTween', 'Blender'],
+    date: 'Oct 2025 - Present',
+    category: 'game'
+  },
+  {
     id: 'ontime',
     title: 'On Time',
     description: 'A rhythm-based action game developed for Magara Jam 25. We used literal MINECRAFT to build maps in this game ( ͡° ͜ʖ ͡°)',

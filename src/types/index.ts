@@ -10,7 +10,7 @@ export interface Project {
 }
 
 export interface ProjectLink {
-  type: 'github' | 'itchio' | 'video' | 'live' | 'steam' | 'linkedin' | 'website' | 'googleplay';
+  type: 'github' | 'itchio' | 'video' | 'live' | 'steam' | 'linkedin' | 'website' | 'googleplay' | 'instagram';
   url: string;
 }
 

@@ -96,6 +96,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                   {link.type === "linkedin" && "LinkedIn"}
                   {link.type === "website" && "Website"}
                   {link.type === "googleplay" && "Google Play"}
+                  {link.type === "instagram" && "Instagram"}
                 </a>
               ))}
               <span className="text-gray-500 dark:text-gray-500 text-xs ml-auto">
