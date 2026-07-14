@@ -6,6 +6,7 @@ import { GameProjects } from './sections/GameProjects';
 import { WebProjects } from './sections/WebProjects';
 import { OtherProjects } from './sections/OtherProjects';
 import { Achievements } from './sections/Achievements';
+import { Experience } from './sections/Experience';
 import { Education } from './sections/Education';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <OtherProjects />
         </div>
         <Achievements />
+        <Experience />
         <Education />
       </main>
       <Footer />

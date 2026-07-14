@@ -39,6 +39,16 @@ export interface Education {
   achievements?: string[];
 }
 
+export interface Experience {
+  id: string;
+  company: string;
+  role: string;
+  team?: string;
+  duration: string;
+  description: string;
+  highlights?: string[];
+}
+
 export interface SocialLink {
   platform: string;
   url: string;
