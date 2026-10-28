@@ -10,9 +10,7 @@ export const OtherProjects = () => {
   return (
     <section className="section-spacing">
       <div className="content-wrapper">
-        <h2 
-          className="text-3xl font-bold mb-8 section-indicator"
-        >
+        <h2 className="text-2xl font-bold mb-6 section-indicator">
           Other Projects
         </h2>
 

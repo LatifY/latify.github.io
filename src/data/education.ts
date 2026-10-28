@@ -5,9 +5,10 @@ export const education: Education[] = [
     id: '1',
     institution: '🦋 Gebze Technical University',
     degree: 'Bachelor of Science in Computer Engineering - Gebze, Kocaeli',
-    duration: '2023 - Present',
-    gpa: '3.6/4.0',
+    duration: '2023 - Jun 2028 (Expected)',
+    gpa: '3.27/4.0',
     achievements: [
+      'YÖKDİL English: 88.75',
       'IEEE Member',
       'Game Development Club'
     ]

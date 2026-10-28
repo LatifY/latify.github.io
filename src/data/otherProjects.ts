@@ -12,7 +12,7 @@ export const otherProjects: Project[] = [
       { type: 'github', url: 'https://github.com/LatifY/opengl-draw-renderer' }
     ],
     technologies: ['C', 'OpenGL', 'CMake', 'GPU Programming'],
-    date: 'Dec 2025 - PRESENT 🛠️',
+    date: 'Dec 2025',
     category: 'other'
   },
   {

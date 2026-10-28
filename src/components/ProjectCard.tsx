@@ -2,6 +2,8 @@ import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { Project } from "../types";
+import { getLinkIcon } from "../data/brandIcons";
+import { BrandIconImage } from "./BrandIconImage";
 
 interface ProjectCardProps {
   project: Project;
@@ -18,7 +20,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
 
   const formattedDate = (() => {
     const date = new Date(project.date);
-    if (isNaN(date.getTime())) {
+    if (/^\d{4}$/.test(project.date) || isNaN(date.getTime())) {
       return project.date;
     }
     return date.toLocaleDateString("en-US", {
@@ -29,17 +31,17 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
 
   return (
     <>
-      <article className="py-6 border-b border-gray-200 dark:border-gray-800 last:border-0">
-        <div className="flex gap-6">
+      <article className="group py-5 border-b border-gray-200 dark:border-gray-800 last:border-0">
+        <div className="flex gap-4 sm:gap-6">
           {hasImage && (
             <div
-              className="flex-shrink-0 w-32 h-32 rounded-lg overflow-hidden glass-card cursor-pointer hover:opacity-80 transition-opacity"
+              className="flex-shrink-0 w-20 h-20 sm:w-28 sm:h-28 rounded-lg overflow-hidden glass-card cursor-pointer"
               onClick={() => setIsOpen(true)}
             >
               <img
                 src={project.images[0]}
                 alt={project.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 onError={(e) => {
                   const target = e.currentTarget;
                   target.style.display = "none";
@@ -67,38 +69,48 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           )}
 
           <div className="flex-1 min-w-0">
-            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+            <h3 className="text-lg font-semibold mb-1">{project.title}</h3>
 
-            <p className="text-gray-700 dark:text-gray-400 mb-3">
+            <p className="text-[15px] leading-relaxed text-gray-700 dark:text-gray-400 mb-3">
               {project.description}
             </p>
 
-            <div className="flex flex-wrap gap-2 mb-3 text-xs text-gray-600 dark:text-gray-400">
-              {project.technologies
-                .map((tech) => <span key={tech}>{tech}</span>)
-                .reduce((prev, curr) => [prev, " · ", curr] as any)}
+            <div className="flex flex-wrap gap-1.5 mb-3">
+              {project.technologies.map((tech) => (
+                <span
+                  key={tech}
+                  className="px-2 py-0.5 rounded-md text-[11px] text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-white/5"
+                >
+                  {tech}
+                </span>
+              ))}
             </div>
 
             <div className="flex items-center gap-4 text-sm flex-wrap">
-              {project.links.map((link) => (
-                <a
-                  key={link.url}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-800 dark:text-gray-400 underline hover:text-blue-600 dark:hover:text-blue-400 hover:no-underline"
-                >
-                  {link.type === "github" && "GitHub"}
-                  {link.type === "itchio" && "Itch.io"}
-                  {link.type === "video" && "Video"}
-                  {link.type === "steam" && "Steam"}
-                  {link.type === "live" && "Live Demo"}
-                  {link.type === "linkedin" && "LinkedIn"}
-                  {link.type === "website" && "Website"}
-                  {link.type === "googleplay" && "Google Play"}
-                  {link.type === "instagram" && "Instagram"}
-                </a>
-              ))}
+              {project.links.map((link) => {
+                const linkIcon = getLinkIcon(link);
+
+                return (
+                  <a
+                    key={link.url}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-gray-800 dark:text-gray-400 underline hover:text-blue-600 dark:hover:text-blue-400 hover:no-underline"
+                  >
+                    <BrandIconImage icon={linkIcon} />
+                    {link.type === "github" && "GitHub"}
+                    {link.type === "itchio" && "Itch.io"}
+                    {link.type === "video" && "Video"}
+                    {link.type === "steam" && "Steam"}
+                    {link.type === "live" && "Live Demo"}
+                    {link.type === "linkedin" && "LinkedIn"}
+                    {link.type === "website" && "Website"}
+                    {link.type === "googleplay" && "Google Play"}
+                    {link.type === "instagram" && "Instagram"}
+                  </a>
+                );
+              })}
               <span className="text-gray-500 dark:text-gray-500 text-xs ml-auto">
                 {formattedDate}
               </span>

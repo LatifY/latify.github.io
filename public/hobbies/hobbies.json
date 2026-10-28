@@ -1,0 +1,94 @@
+[
+  {
+    "id": "guitar",
+    "title": "🎸 Guitar",
+    "description": "When I'm not making games, I'm usually playing guitar.",
+    "videos": [
+      {
+        "title": "Fly Me to the Moon",
+        "description": "Jazz version",
+        "src": "/hobbies/videos/flymetothemoon.mp4",
+        "date": ""
+      },
+      {
+        "title": "Allergies - Marcin",
+        "description": "Played in Kınalıada",
+        "src": "/hobbies/videos/allergies.mp4",
+        "date": ""
+      },
+      {
+        "title": "White Christmas",
+        "description": "",
+        "src": "/hobbies/videos/whitechristmas.mp4",
+        "date": ""
+      }
+    ]
+  },
+  {
+    "id": "photography",
+    "title": "📷 Photography & Astrophotography",
+    "description": "I like taking photos, especially of the night sky.",
+    "photos": [
+      {
+        "title": "Saturn",
+        "src": "/hobbies/photos/IMG_9013.JPG"
+      },
+      {
+        "title": "Saturn 2",
+        "src": "/hobbies/photos/dda4a90c-1d8e-4b1b-9efe-43ac191ae179.JPG"
+      },
+      {
+        "title": "Gibbous Moon",
+        "src": "/hobbies/photos/IMG_9152.JPG"
+      },
+      {
+        "title": "Half Moon",
+        "src": "/hobbies/photos/DSCN7762.jpg"
+      },
+      {
+        "title": "Under the Stars",
+        "src": "/hobbies/photos/IMG_8971.jpeg"
+      },
+      {
+        "title": "Galata Tower at Night",
+        "src": "/hobbies/photos/IMG_9609.jpg"
+      },
+      {
+        "title": "Galata Tower",
+        "src": "/hobbies/photos/DSCN7185.JPG"
+      },
+      {
+        "title": "Maiden's Tower at Night",
+        "src": "/hobbies/photos/IMG_5206.jpg"
+      },
+      {
+        "title": "Mosque at Sunset",
+        "src": "/hobbies/photos/IMG_9598.JPG"
+      },
+      {
+        "title": "Süleymaniye from the Bosphorus",
+        "src": "/hobbies/photos/IMG_1595.JPG"
+      },
+      {
+        "title": "Ferry at Sunset",
+        "src": "/hobbies/photos/IMG_5211.JPG"
+      },
+      {
+        "title": "Ferry in Black & White",
+        "src": "/hobbies/photos/IMG_5220.jpg"
+      },
+      {
+        "title": "Night Ferry",
+        "src": "/hobbies/photos/IMG_5204.JPG"
+      },
+      {
+        "title": "Snowy Evening at Beşiktaş",
+        "src": "/hobbies/photos/DSCN7305.JPG"
+      },
+      {
+        "title": "M2 Metro Station",
+        "src": "/hobbies/photos/IMG_9642.jpg"
+      }
+    ]
+  }
+]

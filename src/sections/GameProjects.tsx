@@ -10,9 +10,7 @@ export const GameProjects = () => {
   return (
     <section id="projects" className="section-spacing">
       <div className="content-wrapper">
-        <h2 
-          className="text-3xl font-bold mb-8 section-indicator"
-        >
+        <h2 className="text-2xl font-bold mb-6 section-indicator">
           Game Development
         </h2>
 

@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { achievements } from '../data/achievements';
+import { getUrlIcon } from '../data/brandIcons';
+import { BrandIconImage } from '../components/BrandIconImage';
 
 export const Achievements = () => {
   const [showAll, setShowAll] = useState(false);
@@ -7,11 +9,9 @@ export const Achievements = () => {
   const hasMore = achievements.length > 3;
 
   return (
-    <section id="about" className="section-spacing">
+    <section id="achievements" className="section-spacing">
       <div className="content-wrapper">
-        <h2 
-          className="text-3xl font-bold mb-8 section-indicator"
-        >
+        <h2 className="text-2xl font-bold mb-6 section-indicator">
           Achievements
         </h2>
 
@@ -23,15 +23,16 @@ export const Achievements = () => {
               <p className="text-gray-700 dark:text-gray-400 mb-3">{achievement.description}</p>
               
               {achievement.links && achievement.links.length > 0 && (
-                <div className="flex flex-wrap gap-3 text-sm mb-2">
+                <div className="flex flex-wrap gap-4 text-sm mb-2">
                   {achievement.links.map((link, index) => (
                     <a
                       key={index}
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-800 dark:text-gray-400 underline hover:text-blue-600 dark:hover:text-blue-400 hover:no-underline"
+                      className="inline-flex items-center gap-1.5 text-gray-800 dark:text-gray-400 underline hover:text-blue-600 dark:hover:text-blue-400 hover:no-underline"
                     >
+                      <BrandIconImage icon={getUrlIcon(link.url)} />
                       {link.label || link.type}
                     </a>
                   ))}

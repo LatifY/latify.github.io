@@ -2,9 +2,9 @@ import { experience } from '../data/experience';
 
 export const Experience = () => {
   return (
-    <section className="section-spacing">
+    <section id="experience" className="section-spacing">
       <div className="content-wrapper">
-        <h2 className="text-3xl font-bold mb-8 section-indicator">
+        <h2 className="text-2xl font-bold mb-6 section-indicator">
           Experience
         </h2>
 
@@ -13,7 +13,12 @@ export const Experience = () => {
             <article key={item.id} className="pb-6 border-b border-gray-200 dark:border-gray-800 last:border-0">
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2">
                 <div>
-                  <h3 className="text-lg font-semibold">{item.company}</h3>
+                  <h3 className="text-lg font-semibold flex items-center gap-2">
+                    {item.logo && (
+                      <img src={item.logo} alt="" className="w-4 h-4 rounded-sm object-contain shrink-0" />
+                    )}
+                    {item.company}
+                  </h3>
                   <p className="text-gray-600 dark:text-gray-400">{item.role}</p>
                   {item.team && <p className="text-sm text-gray-500 dark:text-gray-500 mt-1">{item.team}</p>}
                 </div>

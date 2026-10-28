@@ -16,7 +16,7 @@ export const webProjects: Project[] = [
       { type: 'github', url: 'https://github.com/LatifY/clone-voice' }
     ],
     technologies: ['React', 'TypeScript', 'TailwindCSS', 'Fal.AI', 'Supabase'],
-    date: 'PRESENT 🛠️',
+    date: '2025',
     category: 'web'
   },
   {
@@ -32,7 +32,7 @@ export const webProjects: Project[] = [
     links: [
     ],
     technologies: ['React', 'TypeScript', 'TailwindCSS', 'Supabase'],
-    date: 'PRESENT 🛠️',
+    date: '2025',
     category: 'web'
   },
   {

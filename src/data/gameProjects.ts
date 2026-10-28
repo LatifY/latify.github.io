@@ -2,8 +2,25 @@ import { Project } from '../types';
 
 export const gameProjects: Project[] = [
   {
+    id: 'balloonbound',
+    title: 'Balloon Bound',
+    description: 'A physics-based co-op game for 2 players. You carry a balloon together and try not to hit the obstacles on the way up. Works both local and online! I am building this one solo.',
+    images: [
+      '/assets/balloonbound/cover.png',
+      '/assets/balloonbound/gameplay1.png',
+      '/assets/balloonbound/gameplay2.png',
+      '/assets/balloonbound/characters1.png',
+      '/assets/balloonbound/characters2.png',
+    ],
+    links: [
+    ],
+    technologies: ['Unity', 'C#', 'Netcode for GameObjects'],
+    date: 'May 2026 - Present',
+    category: 'game'
+  },
+  {
     id: 'billiardgame',
-    title: 'Billiard Game',
+    title: 'Baulk',
     description: 'This game provides a unique billiards experience but with that chaotic buckshot roulette vibe — high risk, high reward style. Check out Instagram for more gameplay clips and updates!',
     images: [
       '/assets/billiardgame/ss4.png',
@@ -16,6 +33,42 @@ export const gameProjects: Project[] = [
     ],
     technologies: ['Unity', 'C#', 'HLSL', 'DoTween', 'Blender'],
     date: 'Oct 2025 - Present',
+    category: 'game'
+  },
+  {
+    id: 'chicklet',
+    title: 'Chicklet',
+    description: 'A pixel-art puzzle platformer set inside a multidimensional machine.',
+    images: [
+      '/assets/chicklet/vertical_capsule.png',
+      '/assets/chicklet/main_capsule.png',
+      '/assets/chicklet/header_capsule.png',
+      '/assets/chicklet/deck_mockup.png',
+    ],
+    links: [
+      { type: 'steam', url: 'https://store.steampowered.com/app/2887400/Chicklet/' },
+      { type: 'linkedin', url: 'https://www.linkedin.com/feed/update/urn:li:activity:7364705316271181824' },
+    ],
+    technologies: ['Unity', 'C#', 'Pixel Art'],
+    date: '2025-08',
+    category: 'game'
+  },
+  {
+    id: 'purrandbar',
+    title: 'Purr & Bar',
+    description: 'A cute little game I made with a team of two for BGJ26.',
+    images: [
+      '/assets/purrandbar/cover.png',
+      '/assets/purrandbar/banner.png',
+      '/assets/purrandbar/gameplay1.png',
+      '/assets/purrandbar/gameplay2.png',
+      '/assets/purrandbar/gameplay3.png',
+    ],
+    links: [
+      { type: 'itchio', url: 'https://lativegames.itch.io/purr-and-bar' },
+    ],
+    technologies: ['Unity', 'C#'],
+    date: '',
     category: 'game'
   },
   {
@@ -37,24 +90,6 @@ export const gameProjects: Project[] = [
     category: 'game'
   },
   {
-    id: 'chicklet',
-    title: 'Chicklet',
-    description: 'A pixel-art puzzle platformer set inside a multidimensional machine.',
-    images: [
-      '/assets/chicklet/vertical_capsule.png',
-      '/assets/chicklet/main_capsule.png',
-      '/assets/chicklet/header_capsule.png',
-      '/assets/chicklet/deck_mockup.png',
-    ],
-    links: [
-      { type: 'steam', url: 'https://store.steampowered.com/app/2887400/Chicklet/' },
-      { type: 'linkedin', url: 'https://www.linkedin.com/feed/update/urn:li:activity:7364705316271181824' },
-    ],
-    technologies: ['Unity', 'C#', 'Pixel Art'],
-    date: '2025-08',
-    category: 'game'
-  },
-    {
     id: 'madbad',
     title: 'Mad Bad',
     description: 'A fast-paced 2D motorcycle runner inspired by the chaos of Hotline Miami — weave through brutal traffic, cause explosive mayhem, and embrace the RAGE!',

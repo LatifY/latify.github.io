@@ -42,6 +42,7 @@ export interface Education {
 export interface Experience {
   id: string;
   company: string;
+  logo?: string;
   role: string;
   team?: string;
   duration: string;
@@ -53,4 +54,19 @@ export interface SocialLink {
   platform: string;
   url: string;
   icon: string;
+}
+
+export interface HobbyMedia {
+  title: string;
+  description?: string;
+  src: string;
+  date?: string;
+}
+
+export interface Hobby {
+  id: string;
+  title: string;
+  description: string;
+  videos?: HobbyMedia[];
+  photos?: HobbyMedia[];
 }

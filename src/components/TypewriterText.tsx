@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export const TypewriterText = () => {
-  const words = ['games', 'websites'];
+  const words = ['games'];
   const [isDeleting, setIsDeleting] = useState(false);
   const [wordIndex, setWordIndex] = useState(0);
   const [text, setText] = useState('');
@@ -31,7 +31,7 @@ export const TypewriterText = () => {
 
   return (
     <span>
-      i make <span className="inline-block min-w-[120px]">{text}<span className="animate-pulse">|</span></span>
+      i make games
     </span>
   );
 };

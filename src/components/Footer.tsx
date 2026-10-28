@@ -2,7 +2,7 @@ import { socialLinks } from '../data/socialLinks';
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-gray-200 dark:border-gray-800 mt-20">
+    <footer className="border-t border-gray-200 dark:border-gray-800 mt-8">
       <div className="content-wrapper py-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-600 dark:text-gray-400">
           <p>© {new Date().getFullYear()} Latif Yılmaz</p>
